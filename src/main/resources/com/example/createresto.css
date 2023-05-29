@@ -1,0 +1,8 @@
+.body {
+    -fx-background-color: linear-gradient(to right, yellow, cyan);
+}
+
+.form {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}

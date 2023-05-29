@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="1204.0" styleClass="body" stylesheets="@createresto.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="109.0" layoutY="80.0" prefHeight="624.0" prefWidth="958.0" style="-fx-background-color: white;" styleClass="form" stylesheets="@createresto.css">
+         <children>
+            <Label alignment="CENTER" layoutX="367.0" layoutY="14.0" prefHeight="51.0" prefWidth="246.0" text="Edit Menu">
+               <font>
+                  <Font name="Chilanka Regular" size="26.0" />
+               </font>
+            </Label>
+            <TextField layoutX="111.0" layoutY="108.0" prefHeight="32.0" prefWidth="246.0" />
+            <Label alignment="CENTER" layoutX="17.0" layoutY="103.0" prefHeight="42.0" prefWidth="85.0" text="Nama Menu" />
+            <Label alignment="CENTER" layoutX="41.0" layoutY="158.0" prefHeight="42.0" prefWidth="60.0" text="Kategori" />
+            <TextField layoutX="111.0" layoutY="164.0" prefHeight="32.0" prefWidth="246.0" />
+            <Label alignment="CENTER" layoutX="449.0" layoutY="103.0" prefHeight="42.0" prefWidth="60.0" text="Harga" />
+            <TextField layoutX="517.0" layoutY="108.0" prefHeight="32.0" prefWidth="246.0" />
+            <Label alignment="CENTER" layoutX="424.0" layoutY="179.0" prefHeight="42.0" prefWidth="85.0" text="Penjelasan" />
+            <ListView layoutX="111.0" layoutY="219.0" prefHeight="42.0" prefWidth="246.0" />
+            <TextArea layoutX="517.0" layoutY="153.0" prefHeight="94.0" prefWidth="246.0" />
+            <Button layoutX="24.0" layoutY="219.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="71.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="Gambar" />
+            <Button layoutX="727.0" layoutY="562.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="96.0" style="-fx-background-color: lime;" text="Edit" />
+            <Button layoutX="834.0" layoutY="562.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="96.0" style="-fx-background-color: magenta;" text="Back" />
+            <ImageView fitHeight="174.0" fitWidth="336.0" layoutX="41.0" layoutY="409.0">
+               <image>
+                  <Image url="@../image/cake-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="126.0" fitWidth="200.0" layoutX="763.0" layoutY="-8.0">
+               <image>
+                  <Image url="@../image/coffee-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

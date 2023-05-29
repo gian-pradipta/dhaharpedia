@@ -1,0 +1,11 @@
+.title-label {
+    -fx-font-family: 'Chilanka', cursive;
+    -fx-font-size: 50;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-background-color: yellow;
+    -fx-background-radius: 10 10 0 0;
+    -fx-alignment: center
+}
+
+
