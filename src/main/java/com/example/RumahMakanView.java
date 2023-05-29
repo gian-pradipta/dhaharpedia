@@ -56,7 +56,6 @@ public class RumahMakanView {
             delete.setOnMouseClicked(e -> {RumahMakanController.deleteClickedHandler(this);});
             update.setOnMouseClicked(e -> {RumahMakanController.updateClickedHandler(this);});
     }
-
     public Scene getScene() {
         return scene;
     }

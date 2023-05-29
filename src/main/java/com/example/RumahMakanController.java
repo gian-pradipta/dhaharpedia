@@ -1,9 +1,15 @@
 package com.example;
 
 
+import java.util.ArrayList;
+
 public class RumahMakanController {
     private static RumahMakanModel model = new RumahMakanModel();
+    public static ArrayList<RumahMakanView> rmList = new ArrayList<>();
 
+    public static void disableButton() {
+
+    }
 
     public static void ulasanClickedHandler(RumahMakanView rm) {
         System.out.println("Ulasan clicked");
@@ -18,7 +24,11 @@ public class RumahMakanController {
         rm.getUpdate().setDisable(true);
     }
 
-    public static void getTop10 () {
-
+    public static void disableAllRMButton () {
+        for (int i = 0; i < rmList.size(); i++) {
+            rmList.get(i).getUpdate().setDisable(true);
+            rmList.get(i).getDelete().setDisable(true);
+            rmList.get(i).getRate().setDisable(true);
+        }
     }
 }

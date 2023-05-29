@@ -18,6 +18,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        HomeController.tambahListener();
         HomeView a = new HomeView();
         a.display();
     }

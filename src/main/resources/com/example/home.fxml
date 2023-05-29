@@ -25,14 +25,14 @@
    </left>
    <top>
       <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="75.0" prefWidth="592.0" style="-fx-background-color: #ecca00;" BorderPane.alignment="CENTER">
-        <columnConstraints>
-          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" minWidth="10.0" prefWidth="200.0" />
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" minWidth="10.0" prefWidth="200.0" />
             <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="283.0" />
-          <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="186.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints />
-        </rowConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="186.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
          <children>
             <Button id="tambah" mnemonicParsing="false" text="+">
                <GridPane.margin>
@@ -46,15 +46,19 @@
                   <Insets />
                </GridPane.margin>
             </Label>
-            <ImageView fitHeight="36.0" fitWidth="38.0" GridPane.columnIndex="2">
-               <image>
-                  <Image url="@../image/login-removebg-preview.png" />
-               </image>
-               <GridPane.margin>
-                  <Insets right="10.0" />
-               </GridPane.margin>
-            </ImageView>
+            <Button id="user" mnemonicParsing="false" prefHeight="39.0" prefWidth="50.0" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@../image/login-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
       </GridPane>
    </top>
    <bottom>

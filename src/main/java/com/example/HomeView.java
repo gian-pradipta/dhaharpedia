@@ -10,7 +10,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class HomeView {
-    private ImageView user;
+    private Button user;
     private Scene scene;
     private ScrollPane center;
     private Button tambah;
@@ -73,10 +73,12 @@ public class HomeView {
             scene = new Scene(root, 300, 300);
             this.tambah = (Button) root.lookup("#tambah");
             this.kategori = (Button) root.lookup("#kategori");
+            kategori.setOnMouseClicked(e -> { HomeController.login();});
             this.top10 = (Button) root.lookup("#top10");
+            this.user = (Button) root.lookup("#user");
             top10.setOnMouseClicked((e) -> {HomeController.top10ClickedHandler(this);});
             this.center = (ScrollPane) root.lookup("#center");
-            this.user = (ImageView) root.lookup("#login");
+            this.user.setOnMouseClicked(e -> {HomeController.login();});
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -85,8 +87,9 @@ public class HomeView {
 
     public void display() {
         Stage stage = new Stage();
+        stage.setOnCloseRequest(e -> {Util.exitConfirm(e);});
         stage.setScene(scene);
         stage.setMaximized(true);
-        stage.showAndWait();
+        stage.show();
     }
 }
